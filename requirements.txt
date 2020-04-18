@@ -1,0 +1,11 @@
+django==1.11.20
+djangorestframework
+fcm-django
+nltk
+numpy
+matplotlib
+scipy
+sklearn
+stop_words
+gensim
+pandas
