@@ -26,12 +26,12 @@ class DB :
 
 def initData():
     #void function, one time call when run server
-    DB.books = pd.read_csv('Final_books.csv', sep='\t', error_bad_lines=False, encoding='utf-8')
+    DB.books = pd.read_csv('Final_books.csv', sep='\t', encoding='utf-8')
     DB.books = DB.books[['ISBN', 'bookTitle', 'bookAuthor',
                'yearOfPublication', 'publisher', 'Genre', 'Content', 'IMG_URL']]
-    DB.users = pd.read_csv('Final_users.csv', sep='\t', error_bad_lines=False, encoding='utf-8')
+    DB.users = pd.read_csv('Final_users.csv', sep='\t', encoding='utf-8')
     DB.users = DB.users[['userID', 'Location', 'Age']]
-    DB.ratings = pd.read_csv('Final_ratings.csv', sep='\t', error_bad_lines=False, encoding='utf-8')
+    DB.ratings = pd.read_csv('Final_ratings.csv', sep='\t', encoding='utf-8')
     DB.ratings = DB.ratings[['userID', 'ISBN', 'bookRating']]
     #correct it
     DB.books = DB.books.dropna()
