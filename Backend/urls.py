@@ -42,4 +42,4 @@ urlpatterns = [
     url(r'^recommend_me/$', recommendMe),
 ]
 
-initData()
+# initData()
